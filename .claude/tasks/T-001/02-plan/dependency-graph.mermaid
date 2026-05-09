@@ -1,0 +1,22 @@
+%% Dependency graph cho sub-tasks. Test-first: test node phải đứng trước code node tương ứng.
+%% Render preview với Mermaid Live Editor hoặc VS Code Mermaid extension.
+
+graph TD
+    T01[T-01: Shared types/models]
+    T02[T-02: Unit tests cho logic chính]
+    T03[T-03: Component/Screen]
+    T04[T-04: API integration]
+    T05[T-05: Navigation wiring]
+    T06[T-06: E2E test happy path]
+
+    T01 --> T02
+    T02 --> T03
+    T01 --> T04
+    T03 --> T04
+    T04 --> T05
+    T05 --> T06
+
+    classDef test fill:#fef3c7,stroke:#d97706
+    classDef code fill:#dbeafe,stroke:#2563eb
+    class T02,T06 test
+    class T01,T03,T04,T05 code
