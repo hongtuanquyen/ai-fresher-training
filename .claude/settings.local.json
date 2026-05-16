@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(markitdown)",
+      "Skill(markitdown:*)",
+      "Bash(command -v textutil)",
+      "Bash(markitdown \"raw-spec/SDD_voi_AI_DevTeam.pptx\" -o \"parsed-spec/SDD_voi_AI_DevTeam.md\")",
+      "Bash(textutil -convert docx \"raw-spec/1. Cam ket Thu nhap NPT \\(2024\\) .doc\" -output \"/tmp/cam-ket.docx\")",
+      "Bash(markitdown \"/tmp/cam-ket.docx\" -o \"parsed-spec/1. Cam ket Thu nhap NPT \\(2024\\) .md\")",
+      "Bash(command -v pip3)",
+      "Bash(command -v python3)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//opt/homebrew/Cellar/**)",
+      "Bash(/opt/homebrew/opt/python@3.13/bin/python3.13 -m pip install 'markitdown[pptx]' --break-system-packages -q)",
+      "Skill(pdf-reading)",
+      "Skill(pdf-reading:*)",
+      "Bash(/opt/homebrew/opt/python@3.13/bin/python3.13 -c \"import pdfplumber\")",
+      "Bash(/opt/homebrew/opt/python@3.13/bin/python3.13 -m pip install pdfplumber --break-system-packages -q)",
+      "Bash(/opt/homebrew/opt/python@3.13/bin/python3.13 -)"
+    ]
+  }
+}

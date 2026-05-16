@@ -40,4 +40,4 @@ tự delegate sang subagent tương ứng, KHÔNG tự làm thay.
 - No auto-install: package mới phải qua §8 governance
 - Context manifest: không load file ngoài manifest của role
 - Commit riêng mỗi sub-task với format `[T-XX] <mô tả>`
-- Issues-log: bug mất >15 phút fix → bắt buộc entry (§13)
+- Issues-log: bug mất >15 phút fix → bắt buộc entry
